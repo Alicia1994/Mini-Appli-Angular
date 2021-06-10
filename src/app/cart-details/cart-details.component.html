@@ -1,0 +1,14 @@
+<h1>Info Users</h1>
+
+<div *ngIf="user.login.uuid">
+
+    <h3><a [title]="user.name.first + ' details'" [routerLink]="['/users', user.login.uuid]">
+        {{ user.name.title }} {{ user.name.first }} {{ user.name.last }}
+    </a></h3>
+<div class="container__image">
+    <img src="{{user.picture.medium}}" alt="Photo de profil">
+</div>
+<p>{{ user.email }}</p>
+
+    
+</div>
